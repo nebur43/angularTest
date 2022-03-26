@@ -1,0 +1,248 @@
+<h2>Aligment</h2>
+<div class="container">
+    <div class="row align-items-start bg-info">
+        <div class="col">
+            align-items-start
+        </div>
+        <div class="col">
+            align-items-start
+        </div>
+        <div class="col">
+            align-items-start
+        </div>
+    </div>
+    <div class="row align-items-center bg-danger">
+        <div class="col">
+            align-items-center
+        </div>
+        <div class="col">
+            align-items-center
+        </div>
+        <div class="col">
+            align-items-center
+        </div>
+    </div>
+    <div class="row align-items-end bg-info">
+        <div class="col">
+            align-items-end
+        </div>
+        <div class="col">
+            align-items-end
+        </div>
+        <div class="col">
+            align-items-end
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col align-self-start bg-danger">
+            align-self-start
+        </div>
+        <div class="col align-self-center bg-info">
+            align-self-center
+        </div>
+        <div class="col align-self-end bg-danger">
+            align-self-end
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row justify-content-start">
+        <div class="col-4 bg-info">
+            justify-content-start
+        </div>
+        <div class="col-4 bg-danger">
+            justify-content-start
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-4 bg-info">
+            justify-content-center
+        </div>
+        <div class="col-4 bg-danger">
+            justify-content-center
+        </div>
+    </div>
+    <div class="row justify-content-end">
+        <div class="col-4 bg-danger">
+            justify-content-end
+        </div>
+        <div class="col-4 bg-info">
+            justify-content-end
+        </div>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-4 bg-info">
+            justify-content-around
+        </div>
+        <div class="col-4 bg-danger">
+            justify-content-around
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-4 bg-danger">
+            justify-content-between
+        </div>
+        <div class="col-4 bg-info">
+            justify-content-between
+        </div>
+    </div>
+    <div class="row justify-content-evenly">
+        <div class="col-4 bg-info">
+            justify-content-evenly
+        </div>
+        <div class="col-4 bg-danger">
+            justify-content-evenly
+        </div>
+    </div>
+</div>
+<h2>Column wrapping</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-9 bg-danger">.col-9</div>
+        <div class="col-4 bg-info">.col-4<br>Since 9 + 4 = 13 &gt; 12, this 4-column-wide div gets wrapped onto a new line as one contiguous unit.</div>
+        <div class="col-6 bg-danger">.col-6<br>Subsequent columns continue along the new line.</div>
+    </div>
+</div>
+<p> </p>
+<p>.</p>
+<h2>Column breaks</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-3 bg-info">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3 bg-danger">.col-6 .col-sm-3</div>
+
+        <!-- Force next columns to break to new line -->
+        <div class="w-100 bg-black"></div>
+
+        <div class="col-6 col-sm-3 bg-danger">.col-6 .col-sm-3</div>
+        <div class="col-6 col-sm-3 bg-info">.col-6 .col-sm-3</div>
+    </div>
+</div>
+<h2>Column breaks at specific breakpoints </h2>
+<div class="container">
+    <div class="row">
+        <div class="col-6 col-sm-4 bg-info">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 bg-danger">.col-6 .col-sm-4</div>
+
+        <!-- Force next columns to break to new line at md breakpoint and up -->
+        <div class="w-100 d-none d-md-block bg-black"></div>
+
+        <div class="col-6 col-sm-4 bg-danger">.col-6 .col-sm-4</div>
+        <div class="col-6 col-sm-4 bg-info">.col-6 .col-sm-4</div>
+    </div>
+</div>
+<h1>Reordering</h1>
+<h2>Order classes</h2>
+<div class="container">
+    <div class="row">
+        <div class="col bg-info">
+            First in DOM, no order applied
+        </div>
+        <div class="col order-5 bg-info">
+            Second in DOM, with a order-5
+        </div>
+        <div class="col order-1 bg-danger">
+            Third in DOM, with an order-1
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col order-last bg-danger">
+            First in DOM, order-last
+        </div>
+        <div class="col bg-info">
+            Second in DOM, unordered
+        </div>
+        <div class="col order-first bg-danger">
+            Third in DOM, order-first
+        </div>
+    </div>
+</div>
+<h2>Offset classes</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 bg-info">.col-md-4</div>
+        <div class="col-md-4 offset-md-4 bg-danger">.col-md-4 .offset-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3 bg-danger">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3 bg-info">.col-md-3 .offset-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 bg-info">.col-md-6 .offset-md-3</div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-5 col-md-6 bg-danger">.col-sm-5 .col-md-6</div>
+        <div class="col-sm-5 offset-sm-2 col-md-6 offset-md-0 bg-info">.col-sm-5 .offset-sm-2 .col-md-6 .offset-md-0</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6 bg-info">.col-sm-6 .col-md-5 .col-lg-6</div>
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 bg-danger">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+    </div>
+</div>
+<h2>Margin utilities</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-4 bg-info">.col-4</div>
+        <div class="col-4 ms-auto bg-danger">.col-4 .ms-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-4 me-auto bg-info">.col-4 .me-auto</div>
+        <div class="col-4 bg-danger">.col-4</div>
+    </div>
+    <div class="row">
+        <div class="col-3 ms-md-auto bg-danger bg-gradient text-white">.col-3 .ms-md-auto</div>
+        <div class="col-3 ms-md-auto bg-info">.col-3 .ms-md-auto</div>
+    </div>
+    <div class="row">
+        <div class="col-auto me-auto bg-info">.col-auto .me-auto</div>
+        <div class="col-auto bg-danger">.col-auto</div>
+    </div>
+</div>
+<h1>Rows vs no_row</h1>
+<h2>rows</h2>
+<div class="row">
+    <div class="col-3 bg-light p-3 border">
+        .col-3: width of 25%
+    </div>
+    <div class="col-sm-9 bg-light p-3 border">
+        .col-sm-9: width of 75% above sm breakpoint
+    </div>
+</div>
+<h2>no rows</h2>
+<div class="col-3 bg-light p-3 border">
+    .col-3: width of 25%
+</div>
+<div class="col-sm-9 bg-light p-3 border">
+    .col-sm-9: width of 75% above sm breakpoint
+</div>
+<h2>floating</h2>
+<div class="container">
+    <div class="clearfix">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/320px-Amazon_logo.svg.png" class="col-md-3 float-md-end mb-3 ms-md-3 bg-info bg-opacity-50" alt="[imagen...]">
+
+        <p>
+            La magia del floating está en la clase de src float-md-end. El clearfix vale para englobar todo lo que se ve afectado por el floating de la imagen. Al texto fuera del clearfix no le afecta el floating de la imagen.
+        </p>
+
+        <p>
+            A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+        </p>
+
+        <p>
+            As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at.
+            It simply takes up space and should not really be read.
+        </p>
+
+        <p>
+            And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+        </p>
+
+    </div>
+    <p>ultimo texto ultimo texto ultimo texto ultimo texto ultimo texto ultimo texto ultimo texto ultimo texto ultimo texto </p>
+</div>

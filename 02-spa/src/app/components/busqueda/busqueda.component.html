@@ -1,0 +1,12 @@
+<h1 class="animated fadeIn fast">Buscando: <small>{{strBusqueda}}</small></h1>
+<hr>
+
+<div class="alert alert-info animated fadeIn" role="alert" *ngIf="busq.length == 0">
+    No se encuentran resultados con el término: {{strBusqueda}}
+</div>
+
+<div class="card-columns animated fadeIn">
+
+    <app-heroe-tarjeta (heroeSeleccionado)="verHeroe( $event )" [heroe]="heroe" [index]="getHeroeIdxReal(i)" *ngFor="let heroe of busq; let i= index"></app-heroe-tarjeta>
+
+</div>

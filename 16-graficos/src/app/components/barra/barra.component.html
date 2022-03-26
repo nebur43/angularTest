@@ -1,0 +1,9 @@
+<div class="container m-2">
+    <div>
+        <div style="display: block">
+            <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend" [chartType]="barChartType" [plugins]="barChartPlugins">
+        </canvas>
+        </div>
+        <button class="btn btn-primary m-1" (click)="randomize()">Update</button>
+    </div>
+</div>
